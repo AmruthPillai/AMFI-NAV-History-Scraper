@@ -5,9 +5,6 @@ from _variables import amc_data
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient, ASCENDING, DESCENDING, errors
 
-# Scheme Code;Scheme Name;ISIN Div Payout/ISIN Growth;ISIN Div Reinvestment;Net Asset Value;Repurchase Price;Sale Price;Date
-# 101711;Aditya Birla Sun Life MIP II - Savings 5 Plan - Monthly Dividend - Regular Plan;INF209K01736;INF209K01DE3;11.2839;11.1711;11.2839;04-Jan-2010
-
 # Constants
 url = 'http://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx'
 start_date_str = '01-Jan-2005'
