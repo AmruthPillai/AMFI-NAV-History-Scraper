@@ -81,9 +81,9 @@ for amc in amc_data:
       # Insert all documents of request at once
       collection.insert_many(arr_points, ordered=False)
     except errors.BulkWriteError as e:
-      pass
+      panic = filter(lambda x: x['code'] != 11000, e.details['writeErrors'])
+
+      if len(list(panic)) > 0:
+        print(list(panic))
     except TypeError:
       continue
-    
-    print('-- Inserted', len(arr_points), 'entries into database!')
-    
