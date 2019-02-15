@@ -27,7 +27,7 @@ while x < today:
 # Connect to MongoDB
 client = MongoClient(mongodb_host, mongodb_port)
 db = client['amfi']
-collection = db['nav_historys']
+collection = db['nav_history']
 collection.create_index([('scheme_code', DESCENDING), ('timestamp', ASCENDING)], unique=True)
 cursor = collection.find({})
 
