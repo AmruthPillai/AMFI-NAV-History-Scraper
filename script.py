@@ -10,7 +10,7 @@ from pymongo import MongoClient, ASCENDING, DESCENDING
 
 # Constants
 url = 'http://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx'
-start_date_str = '01-Jan-2010'
+start_date_str = '01-Jan-1995'
 mongodb_host = 'localhost'
 mongodb_port = 27017
 
@@ -27,7 +27,7 @@ dates = []
 
 x = start_date
 while x < today:
-  x = x + relativedelta(months=1)
+  x = x + relativedelta(months=6)
   dates.append(x.strftime('%d-%b-%Y'))
 
 # Connect to MongoDB
@@ -85,4 +85,6 @@ for amc in amc_data:
 
           collection.insert_one(point)
         except DuplicateNAVEntry:
+          continue
+        except ValueError:
           continue

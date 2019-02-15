@@ -1,7 +1,19 @@
 amc_data = [
   {
+    'code': 39,
+    'name': 'ABN AMRO Mutual Fund'
+  },
+  {
     'code': 3,
     'name': 'Aditya Birla Sun Life Mutual Fund'
+  },
+  {
+    'code': 50,
+    'name': 'AEGON Mutual Fund'
+  },
+  {
+    'code': 1,
+    'name': 'Alliance Capital Mutual Fund'
   },
   {
     'code': 53,
