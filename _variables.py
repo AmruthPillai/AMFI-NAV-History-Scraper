@@ -8,14 +8,6 @@ amc_data = [
     'name': 'Aditya Birla Sun Life Mutual Fund'
   },
   {
-    'code': 50,
-    'name': 'AEGON Mutual Fund'
-  },
-  {
-    'code': 1,
-    'name': 'Alliance Capital Mutual Fund'
-  },
-  {
     'code': 53,
     'name': 'Axis Mutual Fund'
   },
@@ -116,10 +108,6 @@ amc_data = [
     'name': 'IIFL Mutual Fund'
   },
   {
-    'code': 11,
-    'name': 'IL&FS Mutual Fund'
-  },
-  {
     'code': 65,
     'name': 'IL&FS Mutual Fund (IDF)'
   },
@@ -134,10 +122,6 @@ amc_data = [
   {
     'code': 42,
     'name': 'Invesco Mutual Fund'
-  },
-  {
-    'code': 70,
-    'name': 'ITI Mutual Fund'
   },
   {
     'code': 16,
