@@ -10,7 +10,7 @@ from pymongo import MongoClient, ASCENDING, DESCENDING
 
 # Constants
 url = 'http://portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx'
-start_date_str = '01-Jan-1995'
+start_date_str = '01-Jan-2006'
 mongodb_host = 'localhost'
 mongodb_port = 27017
 
