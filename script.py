@@ -20,7 +20,7 @@ today = datetime.today()
 
 dates = []
 x = start_date
-while x < today:
+while x <= today:
   x = x + relativedelta(years=1)
   dates.append(x.strftime('%d-%b-%Y'))
 
